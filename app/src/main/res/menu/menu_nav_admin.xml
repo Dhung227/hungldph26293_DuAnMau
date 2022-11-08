@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_PhieuMuon"
+            android:title="Quán lý phiếu mượn"
+            android:icon="@drawable/phieu_muon"/>
+
+        <item
+            android:id="@+id/nav_LoaiSach"
+            android:title="Quán lý loại sách"
+            android:icon="@drawable/sach"/>
+
+        <item
+            android:id="@+id/nav_Sach"
+            android:title="Quán lý sách"
+            android:icon="@drawable/loai_sach"/>
+
+        <item
+            android:id="@+id/nav_ThanhVien"
+            android:title="Quán lý thành viên"
+            android:icon="@drawable/thanh_vien"/>
+    </group>
+
+    <group android:id="@+id/menuKhac"
+        android:title="Thống kê"
+        android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_Top10"
+                android:title="TOP 10 sách mượn nhiều nhất"
+                android:icon="@drawable/top_10"/>
+
+            <item
+                android:id="@+id/nav_DoanhThu"
+                android:title="Doanh thu"
+                android:icon="@drawable/doanh_thu"/>
+    </group>
+
+    <group android:id="@+id/user"
+        android:title="Người dùng"
+        android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_TaoNguoiDung"
+                android:title="Thêm người dùng"
+                android:icon="@drawable/doi_mat_khau"/>
+
+            <item
+                android:id="@+id/nav_DoiMatKhau"
+                android:title="Đổi mật khẩu"
+                android:icon="@drawable/doi_mat_khau"/>
+
+            <item
+                android:id="@+id/nav_DangXuat"
+                android:title="Đăng xuất"
+                android:icon="@drawable/dang_xuat"/>
+    </group>
+</menu>

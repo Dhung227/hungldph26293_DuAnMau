@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.DoanhThuFragment"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bát đầu từ"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_startDay"/>
+        <ImageView
+            android:id="@+id/img_StartDay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ngày kết thúc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_endDay"/>
+        <ImageView
+            android:id="@+id/img_endDay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thống kê"
+        android:backgroundTint="#1D95F4"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/thongke"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_doanhthu"
+        android:gravity="center_vertical"
+        android:textSize="19dp"
+        android:textColor="#FF0000"
+        android:text="Tổng doanh thu: 1000 VNĐ"
+        android:padding="20dp"
+        android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

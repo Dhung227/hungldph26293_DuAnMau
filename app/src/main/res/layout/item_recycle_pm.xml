@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#FFCD80"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_titlePMRed"
+                android:textColor="#FF0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HÓA ĐƠN PHIẾU MƯỢN"
+                android:textSize="20dp"
+                android:layout_margin="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_titlePMGreen"
+                    android:textColor="#1AFF00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HÓA ĐƠN PHIẾU MƯỢN"
+                    android:textSize="20dp"
+                    android:layout_margin="3dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_maPM"
+                android:textColor="#111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mã phiếu mượn : 1"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_thuthuPM"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thủ thư: TT01 - Nguyễn văn A"/>
+            <TextView
+                android:id="@+id/tv_thanhvienPM"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thành viên: 1 - Nguyễn Văn A"/>
+            <TextView
+                android:id="@+id/tv_sachPM"
+                android:layout_width="match_parent"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:text="Sách: 1 - Code c"/>
+
+            <TextView
+                android:id="@+id/tv_ngayThue"
+                android:layout_width="match_parent"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày thuê: 20/06/2022"/>
+
+            <TextView
+                android:id="@+id/tv_giaThue"
+                android:layout_width="match_parent"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:text="giá thuê: 2500"/>
+
+            <TextView
+                android:id="@+id/tv_trangThai"
+                android:layout_width="match_parent"
+                android:textColor="#111"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái: chưa trả sách"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_datra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:backgroundTint="#80FF00"
+                android:paddingBottom="20dp"
+                android:textSize="13dp"
+                android:text="Đã trả sách"
+                />
+            <Button
+                android:id="@+id/btn_trasach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:backgroundTint="#3394FB"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="30dp"
+                android:textSize="13dp"
+                android:text="Trả sách"
+                />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
